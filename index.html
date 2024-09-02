@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Aventura de Celine</title>
+</head>
+<body>
+    <div class="tela-inicial" id="tela-inicial">
+        <h1>Bem-vindo à Aventura de Celine!</h1>
+        <p>Clique no botão abaixo para começar sua jornada emocionante.</p>
+        <button id="iniciar-aventura">Começar Aventura</button>
+    </div>
+    <main style="display: none;">
+        <div class="passo ativo" id="passo-0">
+            <img src="1.jpg" alt="Recebendo o Envelope Misterioso">
+            <p>Celine estava em casa quando recebeu um envelope estranho, sem remetente. Dentro, havia uma passagem de viagem sem informações sobre o destino. Animada com a ideia de uma surpresa, Celine decidiu aceitar o desafio e embarcar na aventura.</p>
+            <button class="btn-proximo" data-proximo="1">Explorar Miami Beach</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="2.jpg" alt="Explorando Miami Beach">
+            <p>Celine chegou a Miami Beach e começou a explorar a cidade. Durante uma caminhada, encontrou uma pista em um mural escondido em um ponto turístico. A pista indicava que o próximo destino era a Ilha Guana. Animada, Celine se preparou para a próxima etapa.</p>
+            <button class="btn-proximo" data-proximo="2">Descobrir o Mapa na Ilha Guana</button>
+            <button class="btn-proximo" data-proximo="4">Voltando para Casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="3.jpg" alt="Descobrindo o Mapa na Ilha Guana">
+            <p>Chegando na Ilha Guana, Celine visitou vários pontos turísticos e encontrou um mapa antigo escondido em um local histórico. O mapa revelou que o destino final era a misteriosa Ilha Perdida, localizada na própria Ilha Guana. Celine estava super empolgada para continuar a aventura!</p>
+            <button class="btn-proximo" data-proximo="3">Explorar a Ilha Perdida</button>
+            <button class="btn-proximo" data-proximo="5">Explorar Novamente na Ilha Guana</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="4.jpg" alt="Explorando a Ilha Perdida">
+            <p>Celine partiu para explorar a Ilha Perdida e finalmente chegou ao destino. Ela descobriu tesouros e maravilhas além das suas expectativas. Decidida a proteger e estudar a ilha, Celine garantiu que suas descobertas fossem preservadas.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a Ilha Perdida</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="5.jpg" alt="Voltando para Casa">
+            <p>Celine achou que a jornada estava demais e decidiu voltar para casa. Ela ficou se perguntando o que teria descoberto se tivesse continuado e se arrependeu um pouco.</p>
+            <button class="btn-proximo" data-proximo="1">Explorar Miami Beach</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <img src="06.jpg" alt="Explorando Novamente na Ilha Guana">
+            <p>De volta à Ilha Guana, Celine decidiu explorar os pontos turísticos novamente e encontrou um mapa antigo. Dessa vez, ela estava decidida a seguir para a Ilha Perdida de vez.</p>
+            <button class="btn-proximo" data-proximo="6">Explorar as Praias da Ilha Guana</button>
+            <button class="btn-proximo" data-proximo="7">Cachoeira Escondida</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <img src="07.jpg" alt="Explorando as Praias da Ilha Guana">
+            <p>Enquanto explorava as praias, Celine encontrou uma caverna que, infelizmente, levou a um beco sem saída. Frustrada, ela decidiu voltar e investigar os pontos turísticos históricos da Ilha Guana mais uma vez.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar aos Pontos Turísticos</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <img src="08.jpg" alt="Cachoeira Escondida">
+            <p>Celine seguiu pelo rio à esquerda e encontrou uma cachoeira escondida. Atrás da cachoeira, ela descobriu inscrições antigas que indicavam a entrada para a Ilha Perdida. A empolgação estava a mil!</p>
+            <button class="btn-proximo" data-proximo="8">Mapa da Ilha Perdida</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <img src="09.jpg" alt="Mapa da Ilha Perdida">
+            <p>Voltando aos pontos turísticos da Ilha Guana, Celine encontrou o mapa novamente e decidiu seguir para a Ilha Perdida. Finalmente, ela estava pronta para o grande final da aventura.</p>
+            <button class="btn-proximo" data-proximo="9">Área Pantanosa</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <img src="10.jpg" alt="Área Pantanosa">
+            <p>O rio à direita levou Celine a uma área pantanosa sem sinais da Ilha Perdida. A paisagem era linda, mas não era o que ela estava procurando. Então, ela decidiu voltar e tentar o outro rio.</p>
+            <button class="btn-proximo" data-proximo="10">Cachoeira e Ilha Perdida</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <img src="11.jpg" alt="Cachoeira e Ilha Perdida">
+            <p>Celine retornou ao rio à esquerda, encontrou a cachoeira escondida novamente e finalmente acessou a Ilha Perdida. Ela explorou a ilha e fez descobertas incríveis.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a Ilha Perdida</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <img src="12.jpg" alt="Explorando a Ilha Perdida">
+            <p>Celine finalizou a jornada explorando a Ilha Perdida e sentiu uma grande satisfação e conquista. Aventura concluída!</p>
+        </div>
+    </main>
+    <script>
+        document.getElementById('iniciar-aventura').addEventListener('click', function() {
+            document.querySelector('.tela-inicial').style.display = 'none';
+            document.querySelector('main').style.display = 'flex';
+        });
+
+        document.querySelectorAll('.btn-proximo').forEach(button => {
+            button.addEventListener('click', function() {
+                const passoAtual = document.querySelector('.passo.ativo');
+                const proximoPasso = document.getElementById(`passo-${this.getAttribute('data-proximo')}`);
+                
+                if (passoAtual) {
+                    passoAtual.classList.remove('ativo');
+                }
+
+                if (proximoPasso) {
+                    proximoPasso.classList.add('ativo');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
